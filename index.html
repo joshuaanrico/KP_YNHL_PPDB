@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<title>PPDB - Yayasan Nurul Huda Lampung</title>
+<meta name="description"		content="" />
+<meta name="keywords"  			content="Sistem PPDB Sekolah Yayasan Nurul Huda Lampung" />
+<meta name="copyright" 			content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href='favicon-ynhl.png' rel='shortcut icon' type='image/x-icon'/>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+#idletimeout { background:#CC5100; border:3px solid #FF6500; color:#fff; font-family:arial, sans-serif; text-align:center; font-size:12px; padding:10px; position:relative; top:0px; left:0; right:0; z-index:100000; display:none; }
+#idletimeout a { color:#fff; font-weight:bold }
+#idletimeout span { font-weight:bold }
+.a {
+	font-size: 24px;
+	color: #F00;
+}
+</style>
+<link href="css/style.css" type="text/css" media="all" rel="stylesheet"/>      
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" language="javascript" src="plugins/jcombo/jcombo.js"></script> 
+<script>
+$(function() {
+	$('.horizontal li:has(ul)').addClass('parent');
+});
+</script>
+</head>
+<body>
+	    <div id="idletimeout">
+            Aplilasi Akan logged off Dalam Waktu <span><</span>&nbsp;detik.<a id="idletimeout-resume" href="#">Klik Agar Tetap Dalam Aplikasi Ini</a>.
+        </div>
+		<header id="page-header">
+            <div class="wrapper">
+                <div id="util-nav">
+                <table border="0">
+                    <tr align="right">
+                        <td>
+                            &nbsp;                        </td>
+                    </tr>
+                </table>
+                </div>
+                                <img src="images/logo ypbu.png" width="341" height="65">
+                    
+		</div>
+                  
+        
+        </header>	
+			 <div class="clear"></div>  
+			 
+<div id="content_home">
+	<div id="content" align="center">    
+	<link href="css/style_login.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/base64.js"></script>
+<script>
+
+	$(function(){
+			$('#loading').hide();
+			$('#username').val('');
+			$('#username').focus();	
+	});
+	
+	function ajaxRequest(){
+		 var activexmodes=["Msxml2.XMLHTTP", "Microsoft.XMLHTTP"] //activeX versions to check for in IE
+		 if (window.ActiveXObject){ //Test for support for ActiveXObject in IE first (as XMLHttpRequest in IE7 is broken)
+		  for (var i=0; i<activexmodes.length; i++){
+		   try{
+			return new ActiveXObject(activexmodes[i])
+		   }
+		   catch(e){
+			//suppress error
+
+		   }
+		  }
+		 }
+		 else if (window.XMLHttpRequest) // if Mozilla, Safari etc
+		  return new XMLHttpRequest()
+		 else
+		  return false
+	}
+
+	function doLogin(){
+		var username = document.getElementById("username").value;
+		var pass = document.getElementById("pass").value;
+		
+		if (pass.length >= 4) {
+			if(username != "" && pass != "") 
+			{
+				var data = encodePlainToBase64('{"USERNAME":"'+username+'","PASSWORD":"'+pass+'"}');
+				//alert('ada '+data);
+				var parameters = "token="+data;
+				$("#loading").fadeIn();
+				$("#error").fadeOut();
+				var mypostrequest = ajaxRequest();
+				mypostrequest.onreadystatechange=function(){
+				 if (mypostrequest.readyState==4){
+				  if (mypostrequest.status==200 || window.location.href.indexOf("http")==-1){					  
+					if (mypostrequest.responseText == 'failed') {
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error").fadeIn("slow");
+					} else if (mypostrequest.responseText == 'success'){
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass").hide();
+						$("#error_pass_3x").hide();
+						$("#error_blokir").hide();
+						$("#error_jam_kerja").hide();
+						$("#error_dokter").hide();
+						$("#success").fadeIn("slow");						
+						setTimeout('$(\'#loading\').fadeOut("slow")');
+						setTimeout('window.location.href="./"',1000);
+					} else if (mypostrequest.responseText == 'failed1') {
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass_3x").hide();
+						$("#error_blokir").hide();
+						$("#error_jam_kerja").hide();
+						$("#error_dokter").hide();
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_pass").fadeIn("slow");
+					} else if (mypostrequest.responseText == 'failed2') {
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass").hide();
+						$("#error_blokir").hide();
+						$("#error_jam_kerja").hide();
+						$("#error_dokter").hide();
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_pass_3x").fadeIn("slow");
+					} else if (mypostrequest.responseText == 'failed3') {
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass").hide();
+						$("#error_pass_3x").hide();
+						$("#error_jam_kerja").hide();
+						$("#error_dokter").hide();
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_blokir").fadeIn("slow");
+					} else if (mypostrequest.responseText == 'failed4') {
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass").hide();
+						$("#error_pass_3x").hide();
+						$("#error_blokir").hide();
+						$("#error_dokter").hide();
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_jam_kerja").fadeIn("slow");
+					}else if (mypostrequest.responseText == 'failed5') {
+						$("#error").hide();
+						$("#error_2").hide();
+						$("#error_pass").hide();
+						$("#error_pass_3x").hide();
+						$("#error_blokir").hide();
+						$("#error_jam_kerja").hide();
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_dokter").fadeIn("slow");
+					}					
+					else {
+						setTimeout('$(\'#loading\').hide("fast")');
+						$("#error_2").html(mypostrequest.responseText);
+						$("#error_2").fadeIn("slow");
+					}
+				  }
+				  else{
+					alert("An error has occured making the request")
+				  }
+				 }
+				};
+				mypostrequest.open("POST", "apps/models/login_proses.php", true);
+				mypostrequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				mypostrequest.send(parameters);
+			}
+			else {
+				alert_msgbox("Username dan password tidak boleh kosong.");
+			}
+		}
+		else
+			alert_msgbox("Panjang password minimal 5 karakter.");
+	}
+	function submitEnter(myfield,e)
+	{
+		var keycode;
+		if (window.event) keycode = window.event.keyCode;
+		else if (e) keycode = e.which;
+		else return true;
+
+		if (keycode == 13)
+		{
+		   doLogin();
+		   return false;
+		}
+		else
+		   return true;
+	}
+
+</script>
+		<p align="center" font-weight: "bold">SISTEM PPDB Yayasan Nurul Huda Lampung <span style="float: inline-start;"></span></p>
+<div id="contentLogin" align="center">
+<br>    
+    <section class="main">
+            
+				<form class="form-1" method="get" id="loginForm">
+                
+                	<p class="field"><center>
+						<img src="images/ypbu.png" height="115" width="115">
+						</center>
+					</p>
+                    <div class="codrops-top1">
+               		<p class="field">
+                    	<center>                        
+                             <font style="size:20px">Penerimaan Peserta Didik baru</font>										                   											
+                             <h5>Yayasan Nurul Huda Lampung</h5>
+                        </center>
+                    </p>
+                	</div>
+					<p class="field">
+						<input type="text" name="username" id="username" placeholder="Username or email" onKeyPress="return submitEnter(this,event)">
+						<i class="icon-user icon-large"></i>
+					</p>
+					<p class="field">
+							<input type="password" name="pass" id="pass" placeholder="Password" onKeyPress="return submitEnter(this,event)">
+							<i class="icon-lock icon-large"></i>
+					</p>
+                    
+					<p class="submit">
+						<button type="button" name="Button" class="button" id="btnOK" onClick="doLogin()"><i class="icon-arrow-right icon-large"></i></button>
+					</p>
+					<p class="bottom">
+						<a href="">Daftar</a>
+					</p>
+					<p class="bottom">
+						<a href="">Lupa Username atau password</a>
+					</p>
+                    <p class="field">                    	
+                        <div id="result"></div>
+                        <span style="float:right"><div id="loading" style="display:none">
+                        <img src="images/spinner.gif"  id="loadingGif"  />&nbsp&nbsp Validasi username dan password...</div>                        
+                        <div id="error" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                        	<font color="red">Login gagal. Username atau password salah...</font>
+                        </div>
+                        <div id="error_pass" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                        	<font color="red">Login gagal. Password anda salah...</font>
+                        </div>
+                        <div id="error_pass_3x" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                            <font color="red">Login gagal. Password anda salah sebanyak 3X hub. Administrator...</font>
+                        </div>
+                        <div id="error_blokir" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                            <font color="red">Login gagal. Login anda telah terblokir hub. Administrator...</font>
+                        </div>
+                        <div id="error_jam_kerja" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                            <font color="red">Aplikasi hanya bisa diakses saat jam kerja (07.00 - 21.00)...</font>
+                        </div>
+                        <div id="error_dokter" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                            <font color="red">Maaf anda tidak dapat login, kontrak anda sudah kadarluarsa...</font>
+                        </div>
+                        <div id="error_2" style="display:none">
+                        	<i class="icon-warning-sign icon-large"></i>
+                            <font color="red">Koneksi ke database gagal...</font>
+                        </div>
+                        <div id="success" style="display:none">
+                        	<i class="icon-ok icon-large"></i>
+                            <font color="blue">Login berhasil. Tunggu sesaat...</font>
+                        </div>
+						</span>						
+                    </p>
+				</form>                               
+			</section>
+</div>            	    
+	</div>						
+</div>
+     <footer id="page-footer">
+        <div id="footer-inner">	
+        <p>&nbsp;</p>
+            <p align="center">PPDB - Yayasan Nurul Huda Lampung &copy; 2015-2020 <span style="float: right;"></span></p>
+        </div>
+    </footer>   
+</body>
+</html>
