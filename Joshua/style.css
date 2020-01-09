@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.content {
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Paragraf yang ada pada header */
+p.pHeader1{
+	margin: 0;
+	font-size: 22px;
+	text-align: center;
+
+}
+p.pHeader2{
+	margin: 0;
+	font-size: 16px;	
+	text-align: center;
+}
+p.pHeader3{
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+}
+p.pHeader4{
+	margin: 0;
+	font-size: 12px;
+}
+
+/* garis yang ada pada header */
+hr.garis {
+  border: 2px solid;
+}
+
+/* Paragraf yang ada pada header */
+p.pContent1{
+	margin: 0;
+	font-size: 14px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.pContent2{
+	margin: 0;
+	font-size: 12px;
+}
+
+
+body{
+	font-family: arial;
+}

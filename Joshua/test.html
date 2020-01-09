@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div id="print-content">
+	<div class="header">
+		<p class="pHeader1">YAYASAN NURUL HUDA LAMPUNG</p>
+		<p class="pHeader2">PONDOK PESANTREN NURUL HUDA</p>
+		<p class="pHeader3">PERGURUAN TRI SUKSES (PAUD - TK - SD - SMP - SMA - SMK)</p>
+		<hr class="garis">
+		<p class="pHeader4">Kantor : Komplek Pondok Pesantren Nurul Huda Serbajadi II Pemanggilan Natar Lampung Selatan Telp/Fax. (0721) 780472</p>
+		<hr>
+	<div class="content">
+		<p class="pContent1">FORMULIR PENDAFTARAN PESERTA DIDIK BARU</p>
+		<i class="pContent2">Bagian ini diisi oleh Petugas Pendaftaran</i>
+		<p class="pContent2">No. Registrasi			xxx</p>
+		<p class="pContent2">Nomor Induk			xxx</p>
+		<p class="pContent2">Sekolah Didaftar		xxx</p>
+		<p class="pContent2">Petugas Penerima		xxx</p>
+	</div>
+	<div class="footer">
+		<p>petugas______</p>
+	</div>
+
+	<form>
+  		<input type="button" onclick="printDiv('print-content')" value="print a div!"/>
+	</form>
+	</div>
+
+	
+
+
+	<script type="text/javascript">
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        w=window.open();
+        w.document.write(printContents);
+        w.print();
+        w.close();
+    }
+    </script>
+</body>
+</html>
