@@ -1,42 +1,51 @@
-.header {
-  position: fixed;
-  top: 0;
-  background-color: white;
+.header{
 }
-
-.content {
+.content{
 }
-
-.footer {
-  position: fixed;
-  bottom: 0;
+.footer{
+	font-size: 12px;
 }
-
+/* paragraf yang tulisannya hilang*/
+p.noDisplay{
+	color: white;
+	font-size: 5px;
+}
 /* Paragraf yang ada pada header */
 p.pHeader1{
 	margin: 0;
-	font-size: 22px;
+	font-size: 25px;
 	text-align: center;
+	font-family: serif;
+	font-weight: bold;
 
 }
 p.pHeader2{
 	margin: 0;
-	font-size: 16px;	
+	font-size: 19px;	
 	text-align: center;
+	font-family: serif;
+	font-weight: bold;
 }
 p.pHeader3{
 	margin: 0;
-	font-size: 16px;
+	font-size: 19px;
 	text-align: center;
+	font-family: serif;
+	font-weight: bold;
 }
 p.pHeader4{
+	text-align: center;
 	margin: 0;
 	font-size: 12px;
 }
 
 /* garis yang ada pada header */
-hr.garis {
+hr.garis1 {
   border: 2px solid;
+}
+
+hr.garis2 {
+  border: 1px solid;
 }
 
 /* Paragraf yang ada pada header */
@@ -46,11 +55,27 @@ p.pContent1{
 	background-color: black;
 	color: white;
 	text-align: center;
+	font-weight: bolder;
 }
 
 .pContent2{
 	margin: 0;
 	font-size: 12px;
+}
+p.pContent3{
+	margin: 0;
+	font-size: 14px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
+p.pContent4{
+	margin: 0;
+	font-size: 14px;
+	background-color: black;
+	color: white;
+	font-weight: bolder;
 }
 
 

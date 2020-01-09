@@ -4,42 +4,47 @@
 	<title>test</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-	<div id="print-content">
+
+	<!-- header -->
 	<div class="header">
-		<p class="pHeader1">YAYASAN NURUL HUDA LAMPUNG</p>
-		<p class="pHeader2">PONDOK PESANTREN NURUL HUDA</p>
-		<p class="pHeader3">PERGURUAN TRI SUKSES (PAUD - TK - SD - SMP - SMA - SMK)</p>
-		<hr class="garis">
-		<p class="pHeader4">Kantor : Komplek Pondok Pesantren Nurul Huda Serbajadi II Pemanggilan Natar Lampung Selatan Telp/Fax. (0721) 780472</p>
-		<hr>
+		<table border="0" align="center">
+			<td><img src="../images/ypbu.png" width="80" height="80"></td>
+			<td><p class="noDisplay">xxxxxxxxxxxx</p></td>
+			<td>
+				<p class="pHeader1">YAYASAN NURUL HUDA LAMPUNG</p>
+				<p class="pHeader2">PONDOK PESANTREN NURUL HUDA</p>
+				<p class="pHeader3">PERGURUAN TRI SUKSES (PAUD - TK - SD - SMP - SMA - SMK)</p>
+			</td>
+		</table>
+	<hr class="garis1">
+	<p class="pHeader4">Kantor : Komplek Pondok Pesantren Nurul Huda Serbajadi II Pemanggilan Natar Lampung Selatan Telp/Fax. (0721) 780472</p>
+	<hr class="garis2">
+	</div>
+
+	<!-- content -->
 	<div class="content">
 		<p class="pContent1">FORMULIR PENDAFTARAN PESERTA DIDIK BARU</p>
-		<i class="pContent2">Bagian ini diisi oleh Petugas Pendaftaran</i>
-		<p class="pContent2">No. Registrasi			xxx</p>
-		<p class="pContent2">Nomor Induk			xxx</p>
-		<p class="pContent2">Sekolah Didaftar		xxx</p>
-		<p class="pContent2">Petugas Penerima		xxx</p>
+		<i class="pContent2">&emsp;&emsp;Bagian ini diisi oleh Petugas Pendaftaran</i>
+		<p class="pContent2">&emsp;&emsp;No. Registrasi&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xxx</p> 
+		<p class="pContent2">&emsp;&emsp;Nomor Induk&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xxx</p>
+		<p class="pContent2">&emsp;&emsp;Sekolah Didaftar&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xxx</p>
+		<p class="pContent2">&emsp;&emsp;Petugas Penerima&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xxx</p>
+		<p class="noDisplay"></p>
 	</div>
+
+	<div class="content">
+		<p class="pContent3">&nbsp;Mohon data di bawah ini dilengkapi dengan huruf kapital</p>
+		<p class="noDisplay"></p>
+		<p class="pContent4">&nbsp;A. DATA PRIBADI CALON PESERTA DIDIK</p>
+		<p class="pContent2">&emsp;1 Nama Lengkap : xyz</p>
+		<p class="pContent2">&emsp;2 NISN : 123</p>
+	</div>
+
+	<!-- footer -->	
 	<div class="footer">
 		<p>petugas______</p>
 	</div>
 
-	<form>
-  		<input type="button" onclick="printDiv('print-content')" value="print a div!"/>
-	</form>
-	</div>
-
 	
-
-
-	<script type="text/javascript">
-    function printDiv(divName) {
-        var printContents = document.getElementById(divName).innerHTML;
-        w=window.open();
-        w.document.write(printContents);
-        w.print();
-        w.close();
-    }
-    </script>
 </body>
 </html>
