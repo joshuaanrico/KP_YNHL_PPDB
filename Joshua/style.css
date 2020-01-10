@@ -10,6 +10,13 @@ p.noDisplay{
 	color: white;
 	font-size: 5px;
 }
+p.noDisplayData{
+	color: white;
+	margin: 0;
+	font-size: 12px;
+	font-family: arial;
+
+}
 /* Paragraf yang ada pada header */
 p.pHeader1{
 	margin: 0;
