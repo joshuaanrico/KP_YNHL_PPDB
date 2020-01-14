@@ -2,7 +2,7 @@
 	// Menambahkan file koneksi.php
 	include("koneksi.php");
 
-	$sql = "SELECT * FROM tb_siswa WHERE id='1'";
+	$sql = "SELECT * FROM tb_siswa WHERE id='3556'";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {

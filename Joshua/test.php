@@ -5,6 +5,20 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
+	<!-- Memanggil Fungsi php untuk database -->
+	<?php 
+		// Menambahkan file koneksi.php
+		include("koneksi.php");
+
+		$sql = "SELECT * FROM tb_siswa WHERE id='3'";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+		    // output data of each row
+		    while($row = $result->fetch_assoc()) {
+		        
+	?>
+
 	<!-- header -->
 	<div class="header">
 		<table border="0" align="center">
@@ -35,10 +49,10 @@
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
 			<td>
-				<p class="pContent2">vvv</p> 
-				<p class="pContent2">xxxx</p>
-				<p class="pContent2">yyyyy</p>
-				<p class="pContent2">zzzzzz</p>
+				<p class="pContent2">: <?php echo $row["No_Reg"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["NISS"]; ?></p>
+				<p class="pContent2">: </p>
+				<p class="pContent2">: </p>
 			</td>
 		</table>
 		<p class="noDisplay"></p>
@@ -75,27 +89,27 @@
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
 			<td>
-				<p class="pContent2">: xyz</p> <!-- 1 -->
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> <!-- 5 -->
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz Tgl x Bln y Thn z</p> 
-				<p class="pContent2">: xyz</p> <!-- 10 -->
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: x </p> 
-				<p class="pContent2">: x</p> 
-				<p class="pContent2">: x</p> 
-				<p class="pContent2">: x</p> <!-- 15 -->
-				<p class="pContent2">: x</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: x dari y bersaudara</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: Jalan xyz No x RT x RW x Desa/Kel X Kec. x Kab. x Prop x Kode Pos x</p> <!-- 20 -->
-				<p class="pContent2">: xyz</p>
+				<p class="pContent2">: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 -->
+				<p class="pContent2">: <?php echo $row["NISN"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["NIK"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Asal_Sekolah"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["No_Peserta_UN"]; ?></p> <!-- 5 -->
+				<p class="pContent2">: <?php echo $row["No_SKHUN_UN"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["No_Ijazah_Tahun"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Jenis_Kelamin"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Agama"]; ?></p> <!-- 10 -->
+				<p class="pContent2">: gaada </p> 
+				<p class="pContent2">: <?php echo $row["Status_Pondok"]; ?> </p> 
+				<p class="pContent2">: gaada </p> 
+				<p class="pContent2">: <?php echo $row["Status_anak"]; ?> </p> 
+				<p class="pContent2">: <?php echo $row["Status_dalam_keluarga"]; ?> </p> <!-- 15 -->
+				<p class="pContent2">: <?php echo $row["Tinggal_dengan"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Warganegara"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Anak_ke"]; ?> dari <?php echo $row["Jumlah_Saudara"]; ?> bersaudara</p> 
+				<p class="pContent2">: <?php echo $row["Bahasa"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Alamat_Lengkap"]; ?>, Kab <?php echo $row["Kabupaten"]; ?>, Kec <?php echo $row["Kecamatan"]; ?>, Kel <?php echo $row["Kelurahan"]; ?>, Kode Pos: <?php echo $row["Kode_Pos"]; ?></p> <!-- 20 -->
+				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p>
 			</td>
 		</table>	
 	</div>
@@ -120,19 +134,19 @@
 				<p class="pContent2">&emsp;&emsp; Penanggung Jawab </p>
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
-			<td>
-				<p class="pContent2">: Ayah x Ibu y</p> <!-- 1 -->
-				<p class="pContent2">: Ayah x Ibu y</p> 
-				<p class="pContent2">: Ayah x Ibu y</p> 
-				<p class="pContent2">: Ayah x Ibu y</p> 
-				<p class="pContent2">: xyz</p> <!-- 5 -->
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: xyz</p> 
-				<p class="pContent2">: Kelompok x Desa x Daerah X</p> 
-				<p class="noDisplayData"></p> 
-				<p class="pContent2">: Kelompok x Desa x Daerah x</p> <!-- 10 -->
-				<p class="noDisplayData"></p>
+			<td style="vertical-align: top;text-align: left;">
+				<p class="pContent2">: Ayah: <?php echo $row["Nama_Ayah"]; ?>, Ibu: <?php echo $row["Nama_Ibu"]; ?></p> <!-- 1 -->
+				<p class="pContent2">: Ayah: <?php echo $row["Pendidikan_terakhir_ayah"]; ?>, Ibu: <?php echo $row["Pendidikan_terakhir_ibu"]; ?></p> 
+				<p class="pContent2">: Ayah: <?php echo $row["Pekerjaan_Ayah"]; ?>, Ibu: <?php echo $row["Pekerjaan_Ibu"]; ?></p> 
+				<p class="pContent2">: <?php echo $row["Penghasilan"]; ?></p> 
+				<p class="pContent2">: gaada</p> <!-- 5 -->
+				<p class="pContent2">: <?php echo $row["Nama_Wali"]; ?></p>
+				<p class="pContent2">: <?php echo $row["Alamat_Ayah"]; ?></p> <!-- alamat wali/ortu  blum -->
+				<p class="pContent2">: Ayah: <?php echo $row["NO_Telp_Ayah"]; ?>, Ibu: <?php echo $row["NO_Telp_Ibu"]; ?></p>
+				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamt penghubung ortu  blum -->
+				<p class="pContent2">: </p> <!-- 10 --> 
+				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamat penghubung penanggung jawab  blum--> 
+				<p class="pContent2">: </p> 
 			</td>
 		</table>	
 	</div>
@@ -148,9 +162,9 @@
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
 			<td>
-				<p class="pContent2">: x</p> <!-- 1 -->
-				<p class="pContent2">: Berat Badan x kg Tinggi Badan y cm</p> 
-				<p class="pContent2">: z</p> 
+				<p class="pContent2">: <?php echo $row["Golongan_Darah"]; ?></p> <!-- 1 -->
+				<p class="pContent2">: Berat Badan: <?php echo $row["Berat_Badan"]; ?> kg, Tinggi Badan: <?php echo $row["Tinggi_Badan"]; ?> cm</p> 
+				<p class="pContent2">: <?php echo $row["Penyakit_diderita"]; ?></p> 
 			</td>
 		</table>	
 	</div>
@@ -158,7 +172,7 @@
 	<!-- footer -->
 	<!-- Tanda tangan -->	
 	<div class="footer">
-		<p style="text-align: right;">Natar, xx xx xx 20xx</p>
+		<p style="text-align: right;">Natar, xx xx xx 20xx</p> <!-- tgl masuk kali?  blum -->
 		<table align="center">
 			<td>
 				<p class="pContent2" align="center">Petugas Penerima,</p>
@@ -186,6 +200,13 @@
 		</table>
 	</div>
 
+	<?php
+		    }
+		} else {
+		    echo "0 results";
+		}
+		$conn->close();
+	 ?>
 	
 </body>
 </html>
