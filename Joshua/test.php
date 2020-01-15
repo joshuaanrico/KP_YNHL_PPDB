@@ -10,7 +10,7 @@
 		// Menambahkan file koneksi.php
 		include("koneksi.php");
 
-		$sql = "SELECT * FROM tb_siswa WHERE id='3'";
+		$sql = "SELECT * FROM tb_siswa WHERE id='2854'";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
@@ -50,9 +50,9 @@
 			<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
 			<td>
 				<p class="pContent2">: <?php echo $row["No_Reg"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["NISS"]; ?></p>
-				<p class="pContent2">: </p>
-				<p class="pContent2">: </p>
+				<p class="pContent2">: <?php echo $row["NIS"]; ?></p>
+				<p class="pContent2">: <?php echo $row["Pendidikan"]; ?></p>
+				<p class="pContent2">: </p> <!-- Tidak ada -->
 			</td>
 		</table>
 		<p class="noDisplay"></p>
@@ -99,9 +99,9 @@
 				<p class="pContent2">: <?php echo $row["Jenis_Kelamin"]; ?></p> 
 				<p class="pContent2">: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p> 
 				<p class="pContent2">: <?php echo $row["Agama"]; ?></p> <!-- 10 -->
-				<p class="pContent2">: gaada </p> 
+				<p class="pContent2">:  </p> <!-- Tidak ada -->
 				<p class="pContent2">: <?php echo $row["Status_Pondok"]; ?> </p> 
-				<p class="pContent2">: gaada </p> 
+				<p class="pContent2">:  </p> <!-- Tidak ada -->
 				<p class="pContent2">: <?php echo $row["Status_anak"]; ?> </p> 
 				<p class="pContent2">: <?php echo $row["Status_dalam_keluarga"]; ?> </p> <!-- 15 -->
 				<p class="pContent2">: <?php echo $row["Tinggal_dengan"]; ?></p> 
@@ -138,10 +138,10 @@
 				<p class="pContent2">: Ayah: <?php echo $row["Nama_Ayah"]; ?>, Ibu: <?php echo $row["Nama_Ibu"]; ?></p> <!-- 1 -->
 				<p class="pContent2">: Ayah: <?php echo $row["Pendidikan_terakhir_ayah"]; ?>, Ibu: <?php echo $row["Pendidikan_terakhir_ibu"]; ?></p> 
 				<p class="pContent2">: Ayah: <?php echo $row["Pekerjaan_Ayah"]; ?>, Ibu: <?php echo $row["Pekerjaan_Ibu"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Penghasilan"]; ?></p> 
-				<p class="pContent2">: gaada</p> <!-- 5 -->
+				<p class="pContent2">: Ayah: <?php echo $row["Penghasilan"]; ?>, Ibu : <?php echo $row["Penghasilan_ibu"]; ?></p> 
+				<p class="pContent2">: </p> <!-- 5 --> <!-- Tidak ada -->
 				<p class="pContent2">: <?php echo $row["Nama_Wali"]; ?></p>
-				<p class="pContent2">: <?php echo $row["Alamat_Ayah"]; ?></p> <!-- alamat wali/ortu  blum -->
+				<p class="pContent2">: <?php echo $row["Alamat_Ayah"]; ?> <?php echo $row["Alamat_Wali"]; ?></p> 
 				<p class="pContent2">: Ayah: <?php echo $row["NO_Telp_Ayah"]; ?>, Ibu: <?php echo $row["NO_Telp_Ibu"]; ?></p>
 				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamt penghubung ortu  blum -->
 				<p class="pContent2">: </p> <!-- 10 --> 
