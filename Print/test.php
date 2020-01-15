@@ -78,8 +78,8 @@
 				<p class="pContent2">&emsp;11 Suku </p>
 				<p class="pContent2">&emsp;12 Status </p>
 				<p class="pContent2">&emsp;13 Kondisi </p>
-				<p class="pContent2">&emsp;14 Keadaan Orang Tua </p>
-				<p class="pContent2">&emsp;15 Status Dalam Keluarga </p>
+				<p class="pContent2">&emsp;14 Keadaan Orang Tua</p>
+				<p class="pContent2">&emsp;15 Status Dalam Keluarga</p>
 				<p class="pContent2">&emsp;16 Tinggal Bersama </p>
 				<p class="pContent2">&emsp;17 Kewarganegaraan </p>
 				<p class="pContent2">&emsp;18 Anak Ke- </p>

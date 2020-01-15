@@ -3,11 +3,11 @@
 .content{
 }
 .footer{
-	font-size: 12px;
+	font-size: 18px;
 }
 /* paragraf yang tulisannya hilang*/
 p.noDisplay{
-	color: white;
+	color: rgb(153, 140, 140);
 	font-size: 5px;
 }
 p.noDisplayData{
@@ -20,7 +20,7 @@ p.noDisplayData{
 /* Paragraf yang ada pada header */
 p.pHeader1{
 	margin: 0;
-	font-size: 25px;
+	font-size: 28px;
 	text-align: center;
 	font-family: serif;
 	font-weight: bold;
@@ -28,14 +28,14 @@ p.pHeader1{
 }
 p.pHeader2{
 	margin: 0;
-	font-size: 19px;	
+	font-size: 20px;	
 	text-align: center;
 	font-family: serif;
 	font-weight: bold;
 }
 p.pHeader3{
 	margin: 0;
-	font-size: 19px;
+	font-size: 20px;
 	text-align: center;
 	font-family: serif;
 	font-weight: bold;
@@ -43,7 +43,7 @@ p.pHeader3{
 p.pHeader4{
 	text-align: center;
 	margin: 0;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 /* garis yang ada pada header */
@@ -58,7 +58,7 @@ hr.garis2 {
 /* Paragraf yang ada pada header */
 p.pContent1{
 	margin: 0;
-	font-size: 14px;
+	font-size: 18px;
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -67,7 +67,7 @@ p.pContent1{
 
 .pContent2{
 	margin: 0;
-	font-size: 12px;
+	font-size: 14px;
 }
 p.pContent3{
 	margin: 0;
@@ -79,7 +79,7 @@ p.pContent3{
 }
 p.pContent4{
 	margin: 0;
-	font-size: 14px;
+	font-size: 18px;
 	background-color: black;
 	color: white;
 	font-weight: bolder;
