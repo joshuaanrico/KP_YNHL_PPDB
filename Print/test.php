@@ -74,6 +74,51 @@
 				<td><p class="noDisplay">xyz</p></td>
 				<td><p class="pContent2">: <?php echo $row["NISN"]; ?></p></td>
 			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;3 NIK </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["NIK"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;4 Asal Sekolah </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Asal_Sekolah"]; ?></p>   </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;5 No. Ujian </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["No_Peserta_UN"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;6 SKHU </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["No_SKHUN_UN"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;7 No. Ijazah </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["No_Ijazah_Tahun"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;8 Jenis Kelamin </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Jenis_Kelamin"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;9 Tempat, Tanggal Lahir </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;10 Agama </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Agama"]; ?></p> <!-- 10 -->  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;11 Suku </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">:  </p> <!-- Tidak ada -->  </td>
+			</tr>
 			<td style="vertical-align: top;text-align: left; width:200px;">
 				<p class="pContent2">&emsp;1 Nama Lengkap </p>
 				<p class="pContent2">&emsp;2 NISN </p>
