@@ -41,14 +41,14 @@
 		<p class="pContent1">FORMULIR PENDAFTARAN PESERTA DIDIK BARU</p>
 		<i class="pContent2">&emsp;&emsp;Bagian ini diisi oleh Petugas Pendaftaran</i>
 		<table>
-			<td>
+			<td style="vertical-align: top;text-align: left;">
 				<p class="pContent2">&emsp;&emsp;No. Registrasi</p> 
 				<p class="pContent2">&emsp;&emsp;Nomor Induk</p>
 				<p class="pContent2">&emsp;&emsp;Sekolah Didaftar</p>
 				<p class="pContent2">&emsp;&emsp;Petugas Penerima</p>
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
-			<td>
+			<td style="vertical-align: top;text-align: left;">
 				<p class="pContent2">: <?php echo $row["No_Reg"]; ?></p> 
 				<p class="pContent2">: <?php echo $row["NIS"]; ?></p>
 				<p class="pContent2">: <?php echo $row["Pendidikan"]; ?></p>
@@ -63,8 +63,18 @@
 		<p class="pContent3">&nbsp;Mohon data di bawah ini dilengkapi dengan huruf kapital</p>
 		<p class="noDisplay"></p>
 		<p class="pContent4">&nbsp;A. DATA PRIBADI CALON PESERTA DIDIK</p>
-		<table>
-			<td>
+		<table border="0">
+			<tr>
+				<td><p class="pContent2">&emsp;1 Nama Lengkap </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 --> </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;2 NISN </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["NISN"]; ?></p></td>
+			</tr>
+			<td style="vertical-align: top;text-align: left; width:200px;">
 				<p class="pContent2">&emsp;1 Nama Lengkap </p>
 				<p class="pContent2">&emsp;2 NISN </p>
 				<p class="pContent2">&emsp;3 NIK </p>
@@ -87,8 +97,8 @@
 				<p class="pContent2">&emsp;20 Alamat </p>
 				<p class="pContent2">&emsp;21 Email </p>
 			</td>
-			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
-			<td>
+			<td><p class="noDisplay">xyz</p></td>
+			<td style="vertical-align: top;text-align: left;">
 				<p class="pContent2">: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 -->
 				<p class="pContent2">: <?php echo $row["NISN"]; ?></p> 
 				<p class="pContent2">: <?php echo $row["NIK"]; ?></p> 
@@ -119,7 +129,7 @@
 		<p class="noDisplay"></p>
 		<p class="pContent4">&nbsp;B. DATA ORANG TUA</p>
 		<table>
-			<td>
+			<td style="vertical-align: top;text-align: left;">
 				<p class="pContent2">&emsp;1 Nama </p>
 				<p class="pContent2">&emsp;2 Pendidikan </p>
 				<p class="pContent2">&emsp;3 Pekerjaan </p>

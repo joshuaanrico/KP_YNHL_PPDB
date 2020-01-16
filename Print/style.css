@@ -3,11 +3,11 @@
 .content{
 }
 .footer{
-	font-size: 18px;
+	font-size: 14px;
 }
 /* paragraf yang tulisannya hilang*/
 p.noDisplay{
-	color: rgb(153, 140, 140);
+	color: white;
 	font-size: 5px;
 }
 p.noDisplayData{
@@ -43,7 +43,7 @@ p.pHeader3{
 p.pHeader4{
 	text-align: center;
 	margin: 0;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 /* garis yang ada pada header */
@@ -71,7 +71,7 @@ p.pContent1{
 }
 p.pContent3{
 	margin: 0;
-	font-size: 14px;
+	font-size: 18px;
 	background-color: black;
 	color: white;
 	font-weight: bold;
