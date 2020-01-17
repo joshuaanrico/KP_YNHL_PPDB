@@ -10,7 +10,7 @@
 		// Menambahkan file koneksi.php
 		include("koneksi.php");
 
-		$sql = "SELECT * FROM tb_siswa WHERE id='1483'";
+		$sql = "SELECT * FROM tb_siswa WHERE id='1024'";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
@@ -67,102 +67,102 @@
 			<tr>
 				<td><p class="pContent2">&emsp;1 Nama Lengkap </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 --> </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 --> </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;2 NISN </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["NISN"]; ?></p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["NISN"]; ?></p></td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;3 NIK </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["NIK"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["NIK"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;4 Asal Sekolah </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Asal_Sekolah"]; ?></p>   </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Asal_Sekolah"]; ?></p>   </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;5 No. Ujian </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["No_Peserta_UN"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["No_Peserta_UN"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;6 SKHU </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["No_SKHUN_UN"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["No_SKHUN_UN"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;7 No. Ijazah </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["No_Ijazah_Tahun"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["No_Ijazah_Tahun"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;8 Jenis Kelamin </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Jenis_Kelamin"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Jenis_Kelamin"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;9 Tempat, Tanggal Lahir </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;10 Agama </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Agama"]; ?></p> <!-- 10 -->  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Agama"]; ?></p> <!-- 10 -->  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;11 Suku </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">:  </p> <!-- Tidak ada -->  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;:  </p> <!-- Tidak ada -->  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;12 Status </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Status_Pondok"]; ?> </p> </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Status_Pondok"]; ?> </p> </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;13 Kondisi </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">:  </p> <!-- Tidak ada -->  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;:  </p> <!-- Tidak ada -->  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;14 Keadaan Orang Tua </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Status_anak"]; ?> </p> </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Status_anak"]; ?> </p> </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;15 Status Dalam Keluarga </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">:  <?php echo $row["Status_dalam_keluarga"]; ?></p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;:  <?php echo $row["Status_dalam_keluarga"]; ?></p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;16 Tinggal Bersama</p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Tinggal_dengan"]; ?> </p>   </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Tinggal_dengan"]; ?> </p>   </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;17 Kewarganegaraan</p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Warganegara"]; ?> </p> </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Warganegara"]; ?> </p> </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;18 Anak Ke-</p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Anak_ke"]; ?> dari <?php echo $row["Jumlah_Saudara"]; ?> bersaudara </p>  </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Anak_ke"]; ?> dari <?php echo $row["Jumlah_Saudara"]; ?> bersaudara </p>  </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;19 Bahasa Sehari-hari</p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["Bahasa"]; ?> </p> </td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["Bahasa"]; ?> </p> </td>
 			</tr>
 			<tr>
 				<td><p class="pContent2">&emsp;20 Email </p></td>
 				<td><p class="noDisplay">xyz</p></td>
-				<td><p class="pContent2">: <?php echo $row["e_Mail"]; ?> </p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: <?php echo $row["e_Mail"]; ?> </p></td>
 			</tr>
 		</table>
 		<table>
@@ -178,36 +178,77 @@
 	<div class="content">
 		<p class="noDisplay"></p>
 		<p class="pContent4">&nbsp;B. DATA ORANG TUA</p>
-		<table>
+
+		<table border="0">
+			<tr>
+				<td><p class="pContent2">&emsp;1 Nama  </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">: Ayah: <?php echo $row["Nama_Ayah"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Ibu: <?php echo $row["Nama_Ibu"]; ?></p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;2 Pendidikan </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">: Ayah: <?php echo $row["Pendidikan_terakhir_ayah"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Ibu: <?php echo $row["Pendidikan_terakhir_ibu"]; ?></p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;3 Pekerjaan </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">: Ayah: <?php echo $row["Pekerjaan_Ayah"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Ibu: <?php echo $row["Pekerjaan_Ibu"]; ?></p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;4 Penghasilan  </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">: Ayah: <?php echo $row["Penghasilan"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Ibu: <?php echo $row["Penghasilan_ibu"]; ?></p></td>
+			</tr>
+		</table>
+		<table border="0">
 			<td style="vertical-align: top;text-align: left;">
-				<p class="pContent2">&emsp;1 Nama </p>
-				<p class="pContent2">&emsp;2 Pendidikan </p>
-				<p class="pContent2">&emsp;3 Pekerjaan </p>
-				<p class="pContent2">&emsp;4 Penghasilan </p>
 				<p class="pContent2">&emsp;5 Email Orang Tua </p>
 				<p class="pContent2">&emsp;6 Nama Wali </p>
 				<p class="pContent2">&emsp;7 Alamat Orang Tua / Wali </p>
 				<p class="pContent2">&emsp;8 Telepon/HP Orang Tua </p>
-				<p class="pContent2">&emsp;9 Alamat Penguhubung </p>
-				<p class="pContent2">&emsp;&emsp;Orang Tua </p>
-				<p class="pContent2">&emsp;10 Alamat Penghubung </p>
-				<p class="pContent2">&emsp;&emsp; Penanggung Jawab </p>
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
 			<td style="vertical-align: top;text-align: left;">
-				<p class="pContent2">: Ayah: <?php echo $row["Nama_Ayah"]; ?>, Ibu: <?php echo $row["Nama_Ibu"]; ?></p> <!-- 1 -->
-				<p class="pContent2">: Ayah: <?php echo $row["Pendidikan_terakhir_ayah"]; ?>, Ibu: <?php echo $row["Pendidikan_terakhir_ibu"]; ?></p> 
-				<p class="pContent2">: Ayah: <?php echo $row["Pekerjaan_Ayah"]; ?>, Ibu: <?php echo $row["Pekerjaan_Ibu"]; ?></p> 
-				<p class="pContent2">: Ayah: <?php echo $row["Penghasilan"]; ?>, Ibu : <?php echo $row["Penghasilan_ibu"]; ?></p> 
 				<p class="pContent2">: </p> <!-- 5 --> <!-- Tidak ada -->
 				<p class="pContent2">: <?php echo $row["Nama_Wali"]; ?></p>
 				<p class="pContent2">: <?php echo $row["Alamat_Ayah"]; ?> <?php echo $row["Alamat_Wali"]; ?></p> 
-				<p class="pContent2">: Ayah: <?php echo $row["NO_Telp_Ayah"]; ?>, Ibu: <?php echo $row["NO_Telp_Ibu"]; ?></p>
-				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamt penghubung ortu  blum --> <!-- maybe -->
-				<p class="pContent2">: </p> <!-- 10 --> 
-				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamat penghubung penanggung jawab  blum--> <!-- maybe -->
-				<p class="pContent2">: </p> 
+				<p class="pContent2">: <?php echo $row["NO_Telp_Ayah"]; ?> , <?php echo $row["NO_Telp_Ibu"]; ?></p>
 			</td>
+		</table>
+		<table border="0">
+			<tr>
+				<td><p class="pContent2">&emsp;9 Alamat Penghubung </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: Kelompok: <?php echo $row["Kelompok"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Desa: <?php echo $row["Desa"]; ?></p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;&emsp;Orang Tua </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: Daerah: <?php echo $row["Daerah"]; ?> </p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;10 Alamat Penghubung </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: Kelompok: <?php echo $row["Kelompok"]; ?> </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2"> Desa: <?php echo $row["Desa"]; ?></p></td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;&emsp;Penanggung Jawab </p></td>
+				<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
+				<td><p class="pContent2">&nbsp;&nbsp;: Daerah: <?php echo $row["Daerah"]; ?> </p></td>
+			</tr>
 		</table>	
 	</div>
 
@@ -220,7 +261,7 @@
 				<p class="pContent2">&emsp;2 Berat dan Tinggi Badan </p>
 				<p class="pContent2">&emsp;3 Riwayat Penyakit </p>
 			</td>
-			<td><p class="noDisplay">&emsp;&emsp;xyz</p></td>
+			<td><p class="noDisplay">&emsp;&emsp;&emsp;xyz</p></td>
 			<td>
 				<p class="pContent2">: <?php echo $row["Golongan_Darah"]; ?></p> <!-- 1 -->
 				<p class="pContent2">: Berat Badan: <?php echo $row["Berat_Badan"]; ?> kg, Tinggi Badan: <?php echo $row["Tinggi_Badan"]; ?> cm</p> 
@@ -239,7 +280,6 @@
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
-				<p class="noDisplay">xyz</p>
 				<p class="pContent2">___________________________</p>
 				<p class="pContent2" align="center">tanda tangan dan nama jelas</p>
 			</td>
@@ -249,14 +289,12 @@
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
-				<p class="noDisplay">xyz</p>
 				<p class="pContent2">___________________________</p>
 				<p class="pContent2" align="center">tanda tangan dan nama jelas</p>
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
 			<td>
 				<p class="pContent2" align="center">Calon Peserta Didik,</p>
-				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
