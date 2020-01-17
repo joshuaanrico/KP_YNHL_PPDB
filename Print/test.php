@@ -10,7 +10,7 @@
 		// Menambahkan file koneksi.php
 		include("koneksi.php");
 
-		$sql = "SELECT * FROM tb_siswa WHERE id='2854'";
+		$sql = "SELECT * FROM tb_siswa WHERE id='1483'";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
@@ -119,53 +119,58 @@
 				<td><p class="noDisplay">xyz</p></td>
 				<td><p class="pContent2">:  </p> <!-- Tidak ada -->  </td>
 			</tr>
-			<td style="vertical-align: top;text-align: left; width:200px;">
-				<p class="pContent2">&emsp;1 Nama Lengkap </p>
-				<p class="pContent2">&emsp;2 NISN </p>
-				<p class="pContent2">&emsp;3 NIK </p>
-				<p class="pContent2">&emsp;4 Asal Sekolah </p>
-				<p class="pContent2">&emsp;5 No. Ujian </p>
-				<p class="pContent2">&emsp;6 SKHU </p>
-				<p class="pContent2">&emsp;7 No. Ijazah </p>
-				<p class="pContent2">&emsp;8 Jenis Kelamin </p>
-				<p class="pContent2">&emsp;9 Tempat, Tanggal Lahir </p>
-				<p class="pContent2">&emsp;10 Agama </p>
-				<p class="pContent2">&emsp;11 Suku </p>
-				<p class="pContent2">&emsp;12 Status </p>
-				<p class="pContent2">&emsp;13 Kondisi </p>
-				<p class="pContent2">&emsp;14 Keadaan Orang Tua</p>
-				<p class="pContent2">&emsp;15 Status Dalam Keluarga</p>
-				<p class="pContent2">&emsp;16 Tinggal Bersama </p>
-				<p class="pContent2">&emsp;17 Kewarganegaraan </p>
-				<p class="pContent2">&emsp;18 Anak Ke- </p>
-				<p class="pContent2">&emsp;19 Bahasa Sehari-hari </p>
-				<p class="pContent2">&emsp;20 Alamat </p>
-				<p class="pContent2">&emsp;21 Email </p>
-			</td>
-			<td><p class="noDisplay">xyz</p></td>
-			<td style="vertical-align: top;text-align: left;">
-				<p class="pContent2">: <?php echo $row["Nama_Lengkap"]; ?></p> <!-- 1 -->
-				<p class="pContent2">: <?php echo $row["NISN"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["NIK"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Asal_Sekolah"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["No_Peserta_UN"]; ?></p> <!-- 5 -->
-				<p class="pContent2">: <?php echo $row["No_SKHUN_UN"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["No_Ijazah_Tahun"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Jenis_Kelamin"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Tempat_Lahir"]; ?>, <?php echo $row["Tanggal_Lahir"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Agama"]; ?></p> <!-- 10 -->
-				<p class="pContent2">:  </p> <!-- Tidak ada -->
-				<p class="pContent2">: <?php echo $row["Status_Pondok"]; ?> </p> 
-				<p class="pContent2">:  </p> <!-- Tidak ada -->
-				<p class="pContent2">: <?php echo $row["Status_anak"]; ?> </p> 
-				<p class="pContent2">: <?php echo $row["Status_dalam_keluarga"]; ?> </p> <!-- 15 -->
-				<p class="pContent2">: <?php echo $row["Tinggal_dengan"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Warganegara"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Anak_ke"]; ?> dari <?php echo $row["Jumlah_Saudara"]; ?> bersaudara</p> 
-				<p class="pContent2">: <?php echo $row["Bahasa"]; ?></p> 
-				<p class="pContent2">: <?php echo $row["Alamat_Lengkap"]; ?>, Kab <?php echo $row["Kabupaten"]; ?>, Kec <?php echo $row["Kecamatan"]; ?>, Kel <?php echo $row["Kelurahan"]; ?>, Kode Pos: <?php echo $row["Kode_Pos"]; ?></p> <!-- 20 -->
-				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p>
-			</td>
+			<tr>
+				<td><p class="pContent2">&emsp;12 Status </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Status_Pondok"]; ?> </p> </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;13 Kondisi </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">:  </p> <!-- Tidak ada -->  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;14 Keadaan Orang Tua </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Status_anak"]; ?> </p> </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;15 Status Dalam Keluarga </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">:  <?php echo $row["Status_dalam_keluarga"]; ?></p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;16 Tinggal Bersama</p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Tinggal_dengan"]; ?> </p>   </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;17 Kewarganegaraan</p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Warganegara"]; ?> </p> </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;18 Anak Ke-</p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Anak_ke"]; ?> dari <?php echo $row["Jumlah_Saudara"]; ?> bersaudara </p>  </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;19 Bahasa Sehari-hari</p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Bahasa"]; ?> </p> </td>
+			</tr>
+			<tr>
+				<td><p class="pContent2">&emsp;20 Email </p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["e_Mail"]; ?> </p></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td><p class="pContent2">&emsp;21 Alamat</p></td>
+				<td><p class="noDisplay">xyz</p></td>
+				<td><p class="pContent2">: <?php echo $row["Alamat_Lengkap"]; ?>, Kab <?php echo $row["Kabupaten"]; ?>, Kec <?php echo $row["Kecamatan"]; ?>, Kel <?php echo $row["Kelurahan"]; ?>, Kode Pos: <?php echo $row["Kode_Pos"]; ?></p></td>
+			</tr>
 		</table>	
 	</div>
 
@@ -198,9 +203,9 @@
 				<p class="pContent2">: <?php echo $row["Nama_Wali"]; ?></p>
 				<p class="pContent2">: <?php echo $row["Alamat_Ayah"]; ?> <?php echo $row["Alamat_Wali"]; ?></p> 
 				<p class="pContent2">: Ayah: <?php echo $row["NO_Telp_Ayah"]; ?>, Ibu: <?php echo $row["NO_Telp_Ibu"]; ?></p>
-				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamt penghubung ortu  blum -->
+				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamt penghubung ortu  blum --> <!-- maybe -->
 				<p class="pContent2">: </p> <!-- 10 --> 
-				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamat penghubung penanggung jawab  blum--> 
+				<p class="pContent2">: <?php echo $row["e_Mail"]; ?></p> <!-- alamat penghubung penanggung jawab  blum--> <!-- maybe -->
 				<p class="pContent2">: </p> 
 			</td>
 		</table>	
@@ -227,10 +232,12 @@
 	<!-- footer -->
 	<!-- Tanda tangan -->	
 	<div class="footer">
-		<p style="text-align: right;">Natar, xx xx xx 20xx</p> <!-- tgl masuk kali?  blum -->
+		<p style="text-align: right;">Natar, <?php echo $row["Tanggal_Masuk"]; ?></p> <!-- maybe -->
 		<table align="center">
 			<td>
 				<p class="pContent2" align="center">Petugas Penerima,</p>
+				<p class="noDisplay">xyz</p>
+				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="pContent2">___________________________</p>
@@ -241,12 +248,16 @@
 				<p class="pContent2" align="center">Orang Tua/Wali,</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
+				<p class="noDisplay">xyz</p>
+				<p class="noDisplay">xyz</p>
 				<p class="pContent2">___________________________</p>
 				<p class="pContent2" align="center">tanda tangan dan nama jelas</p>
 			</td>
 			<td><p class="noDisplay">&emsp;&emsp;&emsp;&emsp;xyz</p></td>
 			<td>
 				<p class="pContent2" align="center">Calon Peserta Didik,</p>
+				<p class="noDisplay">xyz</p>
+				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="noDisplay">xyz</p>
 				<p class="pContent2">___________________________</p>

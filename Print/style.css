@@ -89,3 +89,8 @@ p.pContent4{
 body{
 	font-family: arial;
 }
+
+table.tabel{
+	vertical-align: top;
+	text-align: left;
+}
