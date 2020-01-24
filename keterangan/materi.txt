@@ -1,0 +1,29 @@
+1 pelajaran :
+	desain media interaktif
+	3.7 semester 1
+	3.1.3 multimedia
+	3 materi	page 135
+http://psmk.kemdikbud.go.id/konten/2505/kompetensi-inti-dan-kompetensi-dasar-ki-kd-smkmak
+
+-------------------------------------------
+
+tahun ajaran
+tgl masuk	april 2019
+tahun masuk
+
+daftar nama/laporan print
+
+nomor
+idcard
+status mukim
+tingkat/kelas
+nisn
+nama lengkap
+ttl
+alamat
+nama ayah
+nama ibu
+no hp penanggung jawab
+
+chart unit, status mukim(per unit), dipecah per jenis kelamin, jenis kelamin
+sma,smk,smp,sd,ckmp
