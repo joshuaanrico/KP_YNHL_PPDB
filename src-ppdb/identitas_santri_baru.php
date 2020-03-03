@@ -1,0 +1,1 @@
+<iframe id="pdf_view" src="identitas_santri_baru_cetak.php?NoP=<?php echo $_GET[NoP]; ?>&NiD=<?php echo $_GET[NiD]; ?>"  frameborder="0" height="600" width="900">

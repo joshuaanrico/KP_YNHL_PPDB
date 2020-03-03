@@ -1,0 +1,47 @@
+.tablescroll
+{ font: 14px normal Calibri; background-color:transparent; 
+}
+
+.tablescroll td, 
+.tablescroll_wrapper,
+.tablescroll_head,
+.tablescroll_foot
+{ border:1px solid #f9f9f9; }
+
+.tableinvoice
+{
+}
+
+.tableinvoice td, 
+.tableinvoice_wrapper,
+.tableinvoice_head,
+.tableinvoice_foot
+{ border:1px solid #000; }
+
+.tablescroll thead td
+{ height:40px; font-size:14px; font-weight:bold; background:#abd5fd; border-left:0; border-top:0; margin-bottom:3px; 
+}
+
+.tablescroll td
+{ padding:3px 5px; border-bottom:thin solid #D0D0D0;
+	background-color:transparent;
+}
+
+
+/*.tablescroll_wrapper
+{ border-left:0; }
+
+.tablescroll_head
+{ font-size:11px; font-weight:bold; background-color:#eee; border-left:0; border-top:0; margin-bottom:3px; }
+
+.tablescroll tbody td
+{ border-right:0; border-bottom:0; }
+
+.tablescroll tbody tr.first td
+{ border-top:0; }
+
+.tablescroll_foot
+{ font-weight:bold; background-color:#eee; border-left:0; border-top:0; margin-top:3px; }
+
+.tablescroll tfoot td
+{ border-right:0; border-bottom:0; }*/
