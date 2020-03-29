@@ -10,6 +10,7 @@
 		// Menambahkan file koneksi.php
 		include("koneksi.php");
 
+		//memilih siswa yang ingin diprint
 		$sql = "SELECT * FROM tb_siswa WHERE id='1024'";
 		$result = $conn->query($sql);
 

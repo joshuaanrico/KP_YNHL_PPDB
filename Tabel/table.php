@@ -4,11 +4,9 @@
 	<title>Tabel Daftar Siswa</title>
 </head>
 <body>
-	<?php 
-		include("koneksi.php"); 
+	<?php include("koneksi.php"); ?>
 
-	?>
-	<form method="post" action="?">
+	<form method="post" action="#">
 		<select name="dropdown">
 			<option value="sd">SD</option>
 			<option value="smp">SMP</option>
@@ -17,19 +15,25 @@
 		</select>
 		<input type="submit" value="submit">
 	</form>
+	<br>
+
 	<?php
 		switch ($_POST['dropdown'])  { 
 
-		case "Jehzeel1":
-		 	echo "Jehzeel likes apples";
+		case "sd":
+		 	echo "sd";
 		break;
 
-		case "Jehzeel2":
-		 	echo "Jehzeel likes bananas";
+		case "smp":
+		 	echo "smp";
 		break;
 
-		case "Jehzeel3":
-		 	echo "Jehzeel likes oranges";
+		case "sma":
+		 	echo "sma";
+		break;
+		
+		case "smk":
+		 	echo "smk";
 		break;
 
 		default:
